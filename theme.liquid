@@ -1,0 +1,32 @@
+<!---------------- Add compare modal code into the body tag ------------------------------>
+
+<div id="compareModal" class="m-modal m-modal--wrapper">
+      <div class="m-modal--content container-fluid">
+            <div class="modal-body  m:flex m:items-center m:justify-between">
+              <div class="modal-header">
+                <h4 class="modal-title">Compare Products</h4>
+                <button type="button" class="compare-close m-button m-button--primary" data-bs-dismiss="modal" aria-label="Close">
+                  Close
+                </button>
+              </div>
+              <div id="compareImagesContainer" class="compare-images-container m-product-card__main-image compare-image">
+              <!-- Product images will be added here -->
+              </div>
+              <div class="compare-button">
+                <button
+                  class="m-button m-button--primary m-compare-clear-all-button"
+                  title="clear all"
+                >
+                  Clear All
+                </button>
+                <a
+                  class="m-button m-button--primary"
+                  href="{{ pages[settings.product_compare_page].url }}"
+                  title="compare"
+                >
+                  compare
+                </a>
+              </div>
+        </div>
+      </div>
+    </div>
